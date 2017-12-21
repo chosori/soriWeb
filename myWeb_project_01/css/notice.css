@@ -1,0 +1,105 @@
+  /*notice.css*/
+@charset "utf-8";
+
+/* base */
+h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,div,
+table,thead,tbody, tfoot, tr, th, td,
+form,fieldset,legend,input, textarea, select, button,
+a, img {
+    margin:0; padding:0; border:0; outline:0; color:inherit; 
+    font-size:inherit; font-family:"apple gothic", "myriad pro", 
+    arial, gothic, nanumGothic, dotum, san-serif;}
+    
+    address, em, wbr, strong, ins, del, abbr{font-style:normal;
+    font-weight:normal;}
+
+h1{font-size: 32px; font-size: 2rem;}
+h2{font-size: 29px; font-size: 1.8125rem;}
+h3{font-size: 28px; font-size: 1.75rem;}
+h4{font-size: 24px; font-size: 1.5rem;}
+h5{font-size: 22px; font-size: 1.375rem;}
+h6{font-size: 20px; font-size: 1.125rem;}
+
+ul,ol,li{list-style: none;}
+a{text-decoration:none; color: rgb(102, 102, 102);}
+a:hover, a:active{text-decoration:underline; color: #fff;}
+
+button{cursor:pointer;}
+
+header, nav, section, footer, aside, article, main, figure, figaption
+{display: block; color:inherit;}
+
+
+/* common.css */
+
+.clearfix:after{content: " "; display:block;  width: 100%; height:0;
+    clear: both;}
+.clearfix::after{content: " "; display:block;  width: 100%; height:0;
+    clear: both;}
+
+.hidden wrap a>span,
+.hidden{display:block; width:0; height:0; position: absolute; z-index: -100;
+overflow:hidden;}
+.hidden_wrap a{display:block; width:100%; height:100%;}
+
+#wrap .first{margin-left:0; border-left:0;}
+#wrap .last{margin-right:0; border-right: 0;}
+#wrap .top{margin-top: 0; border-top:0;}
+#wrap .bottom{margin-bottom:0; border-bottom:0;}
+
+/* accessibiligy.css */
+a:focus, button:focus{outline:2px solid #666; background-color:#666;
+color:#333;}
+
+
+/* design ======================= */
+
+#wrap{width: 960px; height: auto; /* padding:1rem; */ margin:0 auto; box-sizing: border-box;}
+
+/* #headBox ================================ */
+
+#headBox{width:960px; height: 180px; background-color:#666;
+   position: fixed; left:50%; margin-left:-480px; top:0; z-index: 300;}
+#headBox>h1{ width:960px; height:100px; line-height: 100px;
+    color: #fff; text-align:center; padding:1rem; box-sizing: border-box; cursor:pointer; }
+#gnb{width: 960px; height: 80px;} 
+#gnb>ul{width:960px; height:70px; }
+#gnb>ul>li{width:120px; height:20px; float:left; color:#fff; 
+/*margin-top: 50px; */margin-left: 100px; text-align:center; cursor:pointer; }
+
+ #indicator{width: 20px; height: 100px; float: right; margin-right: 50px; margin-top:100px;}
+ #indicator>ul{width: 20px; height: 100px;}
+ #indicator>ul>li{width: 20px; height: 20px; background-color: #fff; margin-bottom: 10px; text-align: center; line-height: 20px; border-radius: 10px; }
+
+ /* top_btn  ============================ */
+.top_btn{width:50px; height: 50px; position: fixed; bottom:1rem;
+right: 250px; margin-left: 31rem;  box-sizing: border-box;
+background-color:#fee; color:#666; font-weight: bold; 
+text-align:center; line-height: 50px;}
+
+/* sectionBox ========================== */
+#sectionBox{width: 960px; height: 800px; background-color: #666;
+margin-top: 180px; }
+h2{width: 960px; height: 100px; background-color: #999; text-align: center; line-height: 100px;}
+#sectionBox>dl{width: 960px;height: 500px;}
+#sectionBox>dl>.search01{width: 500px; height: 50px; background-color: #fff;margin-left: 250px; float: left;}
+#sectionBox>dl>dd{width: 700px; height: 50px; background-color: #fff; margin-top: 10px; margin-left: 140px; float: left; text-align: center; line-height: 50px;}
+
+/* articleBox ===================== */
+#articleBox{width: 960px; height: 800px; background-color: #666; }
+h2{width: 960px; height: 100px; background-color: #999; margin-top: 0px; text-align: center; line-height: 100px;}
+#articleBox>dl{width: 960px;height: 500px;}
+#articleBox>dl>.search02{width: 500px; height: 50px; background-color: #fff;margin-left: 250px; float: left;}
+#articleBox>dl>dd{width: 700px; height: 50px; background-color: #fff; margin-top: 10px; margin-left: 140px; float: left; text-align: center; line-height: 50px;}
+
+
+/* #fndBox ============================ */
+#fndBox{width: 960px; height: 200px; background-color: #eee;}
+
+ #fndBox>.logoBox{width: 200px; height: 200px; line-height: 200px; font-weight: 50px; float: left;  text-align: center; font-weight: bold; margin-left: 10px;}
+
+#fndBox>address{width: 700px; height: 60px; float: left; text-align: center; margin-top:40px;} 
+
+.number{width: 700px; height: 100px; float: left; text-align: center;
+margin-top:10px;}
+*/*/
