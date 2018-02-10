@@ -1,0 +1,43 @@
+<!-- headBox.html -->
+<header id="headBox">
+  <h1>
+    <a href="./main.html"><span>청송 아이스클라이밍 월드컵</span></a>
+  </h1>
+  <nav id="gnb">
+    <div class="gnb_wrapper">
+    <h2 class="hidden">global mavigation area</h2>
+
+     <button class="open_btn" type="button">
+        <span class="btn_bar"><!-- btn line --></span>
+        <span class="hidden">menu button show</span>
+       </button>
+    <ul>
+      <li><a href="./main02.html">competiton</a></li>
+      <li><a href="./main03.html">media</a></li>
+      <li><a href="./main04.html">notice / FAQ</a></li>
+      <li><a href="./main05.html">result</a></li>
+    </ul>
+    <div class="box"></div>
+    </div>
+  </nav>
+</header>
+<script>
+  (function($) {
+
+    var gnbBtn = $('.open_btn');
+    var gnb = $('#gnb').find('ul');
+    var logo = $('h1');
+  
+    gnbBtn.on('click',function(e){
+      e.preventDefault();
+      gnb.toggle();
+      logo.toggleClass('active');
+      var active = gnbBtn.toggleClass('active');
+    });
+
+
+
+
+  })(this.jQuery);
+
+</script>

@@ -1,0 +1,162 @@
+<section id="mediaBox">
+  <div>
+    <h2>미디어</h2>
+    <div class="btn">
+      <button type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+
+      <button type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div> <!-- .btn -->
+
+<div class="banner">
+  <dl>
+    <dt><!-- photo --></dt>
+    <dd>
+      <strong>Awarding Cermony</strong> <br />
+        DATE.2017.02.09 
+    </dd>
+  </dl>
+  <dl>
+    <dt><!-- photo --></dt>
+ 
+    <dd>
+      <strong>Awarding Cermony</strong> <br />
+        DATE.2017.02.10 
+    </dd>
+  </dl>
+  <dl>
+    <dt><!-- photo --></dt>
+    <dd>
+      <strong>Awarding Cermony</strong> <br />
+        DATE.2017.02.11 
+    </dd>
+  </dl>
+</div>
+
+
+
+
+
+
+
+    <div class="image">
+        <dl>
+          <dt><!-- photo --></dt>
+          <dd>
+          <strong>Awarding Cermony</strong> <br />
+           DATE.2017.02.09 
+          </dd>
+        </dl>
+      </div>
+
+      <dl>
+        <dt><!-- photo --></dt>
+        <dd>
+        <strong>Awarding Cermony</strong> <br />
+        DATE.2017.02.10 
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><!-- photo --></dt>
+        <dd>
+        <strong>Awarding Cermony</strong> <br />
+         DATE.2017.02.11 
+        </dd>
+      </dl>
+
+ </div>
+
+
+
+
+
+   <div class="banner">
+    <ul>
+      <li class= "banner_content_01"><!-- banner --></li>
+      <li class= "banner_content_02"><!-- banner --></li>
+      <li class= "banner_content_03"><!-- banner --></li>
+    </ul>
+  </div>
+    <!-- top_btn ===================================== -->
+    <div class="top_btn">
+      <a href="#" >
+<i class="fa fa-angle-up" aria-hidden="true"></i> <br />Top</a>
+    </div>
+</section>
+</section>
+
+<script>
+  (function($){
+var banner = $('.banner');
+var bannerUl = banner.children('ul');
+var bannerLast = bannerUl.children('li');
+
+bannerLast.last().prependTo(bannerUl);
+bannerUl.css({marginLeft:'-100%'});
+
+var leftBtn =$('.btn').children('button').first();
+var rightBtn =$('.btn').children('button').last();
+
+leftBtn.on('click', function(e){
+    e.preventDefault(); 
+
+    bannerDl.stop(false,true).animate({marginLeft:0}, function(){
+        bannerLast = bannerDl.children('dd').last();
+        bannerLast.prependTo(bannerDl);
+        bannerDl.css({marginLeft:'-100%'});
+    });
+}); //LeftBtn클릭
+
+rightBtn.on('click', function(event){
+    event.preventDefault(); //??
+
+    bannerDl.stop(false,true).animate({marginLeft:'-200%'}, function(){
+        bannerLast = bannerDl.children('dd').first();
+        bannerLast.appendTo(bannerDl);
+        bannerDl.css({marginLeft:'-100%'});
+    });
+}); //LeftBtn클릭
+
+
+
+
+    var topBtn =$('.top_btn');
+
+    var contentBox = $('.btn').offset().top;
+
+    $(window).on('scroll', function(){
+        var scroll_top = $(this).scrollTop();
+        console.log(scroll_top);
+        if(scroll_top >= contentBox){
+            topBtn.fadeIn();
+
+        }else{
+            topBtn.fadeOut();
+        }
+    });
+
+})(this.jQuery);
+</script>
+
+
+<style>
+
+.image{width: 100%; height: 700px; position: relative; margin-top: 60px;}
+.image>.banner01{width: 40%; height: 400px; float: left; position: relative;}
+.image>.banner01>dl{width: 100%; height: 400px; float: left;position: relative;left:10%; z-index: -100; margin-left: -10%;transform:scale(0.7);}
+.image>.banner01>dl>dt{float: left; width: 100%; height: 300px;background-image:url("../../img/01.jpg"); background-repeat: no-repeat;  
+background-color: #ccc}
+.image>.banner01>dl>dd{float:left; width: 100%; height:100%; font-size:1.3rem; text-align: center; line-height:30px;}
+
+.image>.banner02{width: 40%; height: 400px; float: left;
+  z-index:300; left: 10%;margin-left: -10%; box-shadow:0.1rem 0.1rem 0.1rem rgba(0,0,0,0.4)}
+.image>.banner02>dl{width: 100%; height: 100%;position: relative;}
+.image>.banner02>dl>dt{float: left; width: 100%; height: 300px; background-image: url("../../img/11.jpeg"); background-repeat: no-repeat; 
+background-color: #fa0;}
+.image>.banner02>dl>dd{float:left; width: 100%; height:100%; font-size:1.3rem; text-align: center; line-height:30px;}
+
+.image>.banner03{width: 40%; height: 400px; float:left; position: absolute; z-index: -100; right:0%;}
+.image>.banner03>dl{width: 100%; height: 400px; float: left;position: relative;transform:scale(0.7);}
+.image>.banner03>dl>dt{float: left; width: 100%; height: 300px;   background-image: url("../../img/12.jpg"); background-repeat: no-repeat; 
+background-color: #0af;}
+.image>.banner03>dl>dd{float:left; width: 100%; height:100%; font-size:1.3rem; text-align: center; line-height:30px;}

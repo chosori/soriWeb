@@ -1,0 +1,6 @@
+/* base_01.css */
+
+@import url("./src/wrap.css");
+@import url("./src/headBox.css");
+/*@import url("./src/main_contentBox_01.css");*/
+@import url("./src/footBox.css");

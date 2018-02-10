@@ -1,0 +1,124 @@
+<!-- main_contentBox_01.html -->
+<section id="bannerBox">
+  <h2 class="hidden">slide banner</h2>
+  <div class="banner">
+    <ul>
+      <li class= "banner_content_01"><!-- banner --></li>
+      <li class= "banner_content_02"><!-- banner --></li>
+      <li class= "banner_content_03"><!-- banner --></li>
+    </ul>
+  </div>
+<!-- .btn -->
+  <div class="btn">
+      <button type="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+
+      <button type="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- top_btn ===================================== -->
+    <div class="top_btn">
+      <a href="#" >
+<i class="fa fa-angle-up" aria-hidden="true"></i> <br />Top</a>
+    </div>
+</section>
+
+<!-- contentBox ========================== -->
+<article id="contentBox">
+  <div>
+    <h2> 새로운 시작 아이스클라이밍</h2>
+    <ul>
+     <li>
+      <p><strong>UIAA<br />ICECLIMBING<br />WORLD CUP<br />CHEONGSONG,SOUTH KOREA</strong> <br />
+      9-11 FEBRUARY 2018</p>
+    </li>
+
+     <li>
+      <p>아이스클라이밍을 사랑하는 선수 <br />
+      전 세계의 산악인과 아이스 <br />
+      경북 청송에서 2018 UIAA 아이스클라이밍 <br />
+      월드컵 및 아시아선수권대회를 개최합니다</p>
+   </li>
+    </ul>
+  </div>  
+</article>
+
+<!-- mideaBox ================================== -->
+<li class="movieBox">
+  <div class="skimedia_player">
+    <button type="button" class="play_btn view">
+      <i class="fa fa-play" aria-hidden="true"></i>
+      <span class="hidden">동영상 재생 버튼</span>
+    </button>
+    <button type="button" class="stop_btn">
+      <i class="fa fa-pause" aria-hidden="true"></i>
+      <span class="hidden">동영상 일시정지 버튼</span>
+    </button>
+    <video preload poster="../../multi/video/uiaa.mp4">
+     <!--  <source> 는 jQuery 에서 확인 -->
+      <p>본 브라우저는 비디오가 올바르게 동작하지 않습니다. <br />
+         새로운 브라우저를 설치하시고 감사해주세요.
+        <a href="http://google.com/chrome">크롬브라우저 설치하기</a>
+      </p>
+      <span class="hidden">스크 관련 영상</span>
+    </video>
+  </div>
+
+ <script src="../js/public/main_contentBox_01.js"></script>
+
+<!-- <script>
+  (function($){
+    //     // jQuery
+    var banner = $('.banner');
+    // var bannerUl = $('.banner>ul');
+    var bannerUl = banner.children('ul');
+    // var bannerLast = $('.banner>ul>li');
+    var bannerLast = bannerUl.children('li');
+    
+    
+    bannerLast.last().prependTo(bannerUl);
+    bannerUl.css({marginLeft:'-100%'});
+    banner.css({overflow:'hidden'});
+    
+    var leftBtn =$('.btn').children('button').first();
+    var rightBtn =$('.btn').children('button').last();
+    
+    leftBtn.on('click', function(event){
+        event.preventDefault(); //??
+    
+        bannerUl.stop(false,true).animate({marginLeft:0}, function(){
+            bannerLast = bannerUl.children('li').last();
+            bannerLast.prependTo(bannerUl);
+            bannerUl.css({marginLeft:'-100%'});
+        });
+    }); //LeftBtn클릭
+    
+    rightBtn.on('click', function(event){
+        event.preventDefault(); //??
+    
+        bannerUl.stop(false,true).animate({marginLeft:'-200%'}, function(){
+            bannerLast = bannerUl.children('li').first();
+            bannerLast.appendTo(bannerUl);
+            bannerUl.css({marginLeft:'-100%'});
+        });
+    }); //rightBtn클릭
+
+
+
+    var topBtn =$('.top_btn');
+
+    var bannerBox = $('#bannerBox').offset().top;
+
+    $(window).on('scroll', function(){
+        var scroll_top = $(this).scrollTop();
+        console.log(scroll_top);
+        if(scroll_top >= bannerBox){
+            topBtn.fadeIn();
+
+        }else{
+            topBtn.fadeOut();
+        }
+    });
+    
+    
+    })(this.jQuery);
+</script> -->   

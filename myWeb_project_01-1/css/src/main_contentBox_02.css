@@ -1,0 +1,88 @@
+/* main_contentBox_02.css */
+#newsBox{width: 960px;height:auto; margin: 0 auto;}
+#newsBox:after{content:" "; display: block; clear: both; }
+#newsBox>.news{width: 100%; height: 1000px; float: left;}
+h2{width: 150px; height: auto;margin: 0 auto; text-align: center; margin-top: 90px;}
+#newsBox>.news>.news01{width: 100%; height: 300px; float: left; margin-top: 100px;}
+#newsBox>.news>.news01>li:nth-of-type(1){width: 480px; height: 300px; background-image: url("../../img/01.jpg"); background-size: 480px 300px; float: left; padding: 10px; box-sizing: border-box; border:1px solid #ddd;}
+#newsBox>.news>.news01>li:nth-of-type(2){width: 480px;height: 300px; border: 1px solid #ddd; float:right; padding: 10px; box-sizing: border-box;}
+.news>.news01>li:nth-of-type(2)>span{width: 108px;height: 30px;color: #d50c0d; font-weight: bold; font-size: 1.1rem; margin-left: 182px; margin-top: 20px;}
+.news>.news01>li:nth-of-type(2)>p{width: 412px;height: 270px; margin-top: 16px; margin-left: 30px; color: #333; line-height: 30px;}
+.news>.news02{width: 100%; height: 300px; float: left;}
+.news>.news02>li:nth-of-type(1){width: 480px; height: 300px; border:1px solid #ddd; float: left; padding: 10px; box-sizing: border-box;}
+.news>.news02>li:nth-of-type(1)>span{width: 108px; height: 30px;color: #d50c0d; font-weight: bold; font-size: 1.1rem; margin-left: 190px; margin-top: 10px; }
+.news>.news02>li:nth-of-type(1)>p{width: 440px; height: 234px; margin-top: 16px; margin-left: 30px; color: #333; line-height: 22px;}
+.news>.news02>li:nth-of-type(2){width: 480px; height: 300px; background-image: url("../../img/08.jpg"); background-size: 480px 300px; float: left; padding: 10px; box-sizing: border-box; border:1px solid #ddd;}
+
+/* contentBox =========================== */
+#contentBox{width: 100%; height:700px; background-color: #ebebeb; margin: 0 auto; padding: 60px; box-sizing: border-box;}
+.text{width: 150px; height: auto;margin: 0 auto; text-align: center;}
+#contentBox>div{width: 100%; height: auto; margin: 0 auto;}
+#contentBox>div>.view01{width: 300px; height: 240px; background-color: #7fa3fc;margin-top: 100px; margin-left: 220px; float: left;}
+
+.icon01{width: 300px; height: 240px; background-image: url("../../img/icon_03.png"); background-repeat: no-repeat; background-size: 60%; background-position: center; overflow: hidden; float: left;}
+
+#contentBox>div>.view01>.icon01>.box>button{width: 300px;height: 240px;background-color:rgba(255,255,255,0.5); transform:skewY(-5deg) translateY(1rem); float: left;}
+
+#contentBox>div>.view01>.icon01>.box>button>.title>span{margin-top: 60px; font-weight: bold; margin-left: 75px; font-size: 2rem; float: left; transform:skewY(5deg); display: block;}
+
+#contentBox>div>.view01>.icon01>.box>button>.sub_01>span{transform:skewY(5deg); display: block; float: left; margin-left: 140px; margin-top: 30px; font-weight: bold; font-size: 1.5rem;}
+
+#contentBox>div>.view01>.icon01>.box>button>.sub_02>span{transform:skewY(5deg); display: block; float: left; margin-left: 97px; margin-top: 9px; font-size: 1.2rem; font-weight: bold;}
+
+.icon01:hover>.ha{height: 0; transition: all 300ms; }
+ .ha{width: 300px; height:240px;}
+
+/* icon02 ==================================== */
+#contentBox>div>.view02{width: 300px; height: 240px; background-color: #72e9d6; float: left; margin-top: 100px; margin-left: 10px; float: left;}
+
+ .icon02{width: 300px; height: 240px; background-image: url("../../img/icon_02.png"); background-repeat: no-repeat; background-size: 60%; background-position: center; overflow: hidden; float: left;}
+
+#contentBox>div>.view02>.icon02>.box>button{width: 300px;height: 240px;background-color:rgba(255,255,255,0.5); transform:skewY(-5deg) translateY(1rem); float: left;}
+
+#contentBox>div>.view02>.icon02>.box>button>.title>span{margin-top: 60px; font-weight: bold; margin-left: 75px; font-size: 2rem; float: left; transform:skewY(5deg); display: block;}
+
+#contentBox>div>.view02>.icon02>.box>button>.sub_01>span{transform:skewY(5deg); display: block; float: left; margin-left: 140px; margin-top: 30px; font-weight: bold; font-size: 1.5rem;}
+
+#contentBox>div>.view02>.icon02>.box>button>.sub_02>span{transform:skewY(5deg); display: block; float: left; margin-left: 97px; margin-top: 9px; font-size: 1.2rem; font-weight: bold;}
+
+.icon02:hover>.ha{height: 0; transition: all 300ms; }
+ .ha{width: 300px; height:240px;}
+
+/* icon ==================================== */
+#contentBox>div>.view03{width: 300px; height: 240px; background-color: #85c3fb; float: left; margin-top: 100px; margin-left: 10px; float: left;}
+
+ .icon03{width: 300px; height: 240px; background-image: url("../../img/icon_01.png"); background-repeat: no-repeat; background-size: 70%; background-position: center; overflow: hidden; float: left;}
+
+#contentBox>div>.view03>.icon03>.box>button{width: 300px;height: 240px;background-color:rgba(255,255,255,0.5); transform:skewY(-5deg) translateY(1rem); float: left;}
+
+#contentBox>div>.view03.view03>.icon03>.box>button>.title>span{margin-top: 60px; font-weight: bold; margin-left: 75px; font-size: 2rem; float: left; transform:skewY(5deg); display: block;}
+
+#contentBox>div>.view03>.icon03>.box>button>.sub_01>span{transform:skewY(5deg); display: block; float: left; margin-left: 140px; margin-top: 30px; font-weight: bold; font-size: 1.5rem;}
+
+#contentBox>div>.view03>.icon03>.box>button>.sub_02>span{transform:skewY(5deg); display: block; float: left; margin-left: 97px; margin-top: 9px; font-size: 1.2rem; font-weight: bold;}
+
+.icon03:hover>.ha{height: 0; transition: all 300ms; }
+ .ha{width: 300px; height:240px;}
+
+/* .top_btn ======================= */
+.top_btn{width:60px; height: 60px; position: fixed;bottom:1rem; right: 0; box-sizing: border-box;font-weight: bold; 
+text-align:center; line-height: 20px;}
+.top_btn>a{display: block;width: 100%;height: 100%; color: #2971cf;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

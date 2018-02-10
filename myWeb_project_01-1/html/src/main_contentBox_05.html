@@ -1,0 +1,60 @@
+<section id="sectionBox">
+  <div class="medal"><!-- medal --></div>
+<h2>대회결과</h2>
+<ul>
+  <li>
+    <dl class="first">
+      <dt><span>1등</span> &nbsp;&nbsp; 박희용</dt>
+      <dd><span class="hidden">국기</span>
+      </dd>
+      <dd><!-- medal --></dd>
+      <dd>대한민국</dd>
+    </dl>
+
+    <dl class="second">
+      <dt><span>2등</span> &nbsp;&nbsp; 신은선</dt>
+      <dd><span class="hidden">국기</span>
+      </dd>
+      <dd><!-- medal --></dd>
+      <dd>대한민국</dd>
+    </dl>
+
+    <dl class="third">
+      <dt><span>3등</span> &nbsp;&nbsp; 블라소바 막심</dt>
+      <dd><span class="hidden">국기</span>
+      </dd>
+      <dd><!-- medal --></dd>
+      <dd>러시아</dd>
+    </dl>
+
+  </li>
+</ul>
+
+    <!-- top_btn ===================================== -->
+    <div class="top_btn">
+      <a href="#" >
+<i class="fa fa-angle-up" aria-hidden="true"></i> <br />Top</a>
+    </div>
+
+</section>
+
+<script>
+  (function($){
+    // top_btn
+    var topBtn =$('.top_btn');
+
+    var contentBox = $('.second').offset().top;
+
+    $(window).on('scroll', function(){
+        var scroll_top = $(this).scrollTop();
+        console.log(scroll_top);
+        if(scroll_top >= contentBox){
+            topBtn.fadeIn();
+
+        }else{
+            topBtn.fadeOut();
+        }
+    });
+
+  })(this.jQuery);
+</script>
