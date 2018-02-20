@@ -1,5 +1,8 @@
 /* #footBox ======================================== */
-#footBox{width: 100%; height: auto; background-color: #333;}
-#footBox>ul{width: 100%; height: 300px;}
-#footBox>ul>li.smallLogo{width: 300px; height: 300px; color: #fff; font-size: 3rem; text-align: center; line-height: 300px; float: left;}
-#footBox>ul>li.address{width: 1000px; height: auto; color: #fff; float:left; text-align: center; line-height: 30px; margin-top: 100px;}
+#footBox{width: 100%; height: 300px; background-color: #333; margin: 0 auto;}
+#footBox:after{content: " "; display: block; clear:both;}
+address{width: 100%; height: 100%;}
+.small_logo{width: 150px; height: 60px; background-image: url("../../img/logo01-1.png");background-size: 100%; background-position: center; margin-left: 70px; margin-top: 115px; float: left;}
+
+address>div{width: 1000px; height: auto; color: #fff; float:left; text-align: center; line-height: 30px; margin-top: 120px;margin-left: 40px; font-size: 1.1rem;}
+

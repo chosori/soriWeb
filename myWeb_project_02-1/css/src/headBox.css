@@ -25,33 +25,35 @@ h1{width: 140px; height: 60px; margin: 0 auto;
 background-image: url("../../img/logo_01.png");
 background-repeat: no-repeat; background-size: contain; background-position: center; }
 h1>a{display: block; width: 100%; height: 100%;}
-.lnb{width: 100%; height: auto; margin-left: 310px; margin-top: 55px;}
+/* .lnb ==================================== */
+.lnb{width: 960px;  height: auto; margin-left: 310px; margin-top: 20px;}
+.lnb>.big{width: 160px; height: 30px;float: left; padding: 0.3rem; box-sizing: border-box;  margin-left: 30px; }
+
+.lnb>.big>a{display: block; width: 100%; height: 100%; color: #333; font-size: 1.1rem; font-weight: bold;text-align: center; position: relative;}
+.lnb>.big>a:after{content:" "; display: block; position: absolute; width: 0; height: 0; border-bottom: 3px solid #f06; bottom: 0; left: 50%; margin-left: 0; transition:all 500ms ease;}
+.lnb>.big>a:focus, .lnb>li>a:hover{background-color:transparent; text-decoration: none;}
+.lnb>.big>a:focus:after,.lnb>li>a:hover:after{width: 100%; margin-left: -50%;}
+
+
 .lnb>li{width: 160px; height: 30px;float: left; padding: 0.3rem; box-sizing: border-box;  margin-left: 30px;}
-.lnb>li>a{display: block; width: 100%; height: 100%; color: #333; font-size: 1rem; font-weight: bold;text-align: center;}
-.lnb>li>a:after{content:" ";display: block;  }
+.lnb>li>a{display: block; width: 100%; height: 100%; color: #333; font-size: 1.1rem; font-weight: bold;text-align: center; position: relative;}
+.lnb>li>a:after{content:" "; display: block; position: absolute; width: 0; height: 0; border-bottom: 3px solid #f06; bottom: 0; left: 50%; margin-left: 0; transition:all 500ms ease;}
+.lnb>li>a:focus, .lnb>li>a:hover{background-color:transparent; text-decoration: none;}
+.lnb>li>a:focus:after,.lnb>li>a:hover:after{width: 100%; margin-left: -50%;}
+
+.small{width: 960px; min-width: 960px; height:225px; float: left;  border-top: 1px solid #999; border-bottom: 1px solid #999;background-color: #fff; margin-left: -100px; position: absolute; z-index: 100;}
+.small>dl{float: left; margin-top: 30px; margin-right: 60px; padding: 15px; box-sizing: border-box;}
+.small>dl>dt{font-weight:bold; margin-bottom: 20px;}
+.small>dl>dd{margin-bottom: 10px; }
+.small>dl>dd>a{display:block; margin-bottom: 10px; color: #333; }
+/*.small>dl:nth-of-type(1){margin-left: 10px; }*/
+.small>dl:nth-of-type(2)>dd{margin-top: 16px; }
+.small>dl:nth-of-type(3)>dd{margin-top: 16px; }
+.small>dl:nth-of-type(4)>dd{margin-top: 16px; }
+.small>dl:nth-of-type(5){ height: 140px; padding:0  20px; box-sizing: border-box; border-left: 1px solid #ddd;}
 
 
 
 
 
 
-
-#gnb01>ul>.logo{width: 80px; height: 40px; color: #fff; font-size: 1.5rem; margin-left: 50px; text-align: center; line-height: 40px; float: left; /*color:#fff;*/}
-#gnb01>ul>li{width: 60px; height: 40px; float: right; margin-right: 10px; color: #fff; text-align: center; line-height: 40px;/* border-right: 1px solid #fff;*/}
-.search{display: block; width: 100%; height: 100%;
-background-image: url("../../img/search01.svg");
-background-repeat: no-repeat; background-position: center; background-size: 60% 60%;}
-
-
-#gnb02{width: 100%; height: 360px; margin: 0 auto;}
-h1{width: 120px; height: 80px; text-align: center; line-height: 80px; left: 100%; margin-left: 45%; top: 80px; margin: 0 auto;}
-#gnb02>.lnb01{width: 130px; height: 310px; position: relative; top:80px;float: left;  left:400px; font-weight: bold; margin-left: 40px;}
-#gnb02>.lnb01>ul{width: 100%; height: auto; position: absolute; top:30px; display: none; background-color: #fff;}
-#gnb02>.lnb01>ul:after{content:" "; display: block; clear: both; }
-
-#gnv02>.lnb01>ul>li{float: left; padding: 0 0.7rem; box-sizing: border-box; letter-spacing: -0.025rem; }
-
-#gnb02>dl{width: 100%; height: 400px; /*background-color: #eee;*/ }
-#gnb02>dl>dt.lnb02{width: 130px; height: 30px; float: left; margin-left: 400px; margin-top: 55px; text-align: center; line-height: 30px; font-weight: bold;}
-#gnb02>dl>dt.lnb03{width: 130px; height: 30px; float: left; margin-top: 55px; text-align: center; line-height: 30px; font-weight: bold;}
-#gnb02>dl>dt.lnb04{width: 130px; height: 30px; float: left;margin-left: 10px; margin-top: 55px; text-align: center; line-height: 30px; font-weight: bold;}

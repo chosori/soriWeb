@@ -51,18 +51,28 @@ searchBtn.on('click',['button'],function(e){
   searchBtn.css({color:'#fff'});
 
   }
+}); // search 
+
+// .lnb ===========================
+var lnb = $('.lnb');
+var lnbList =lnb.children('.big');
+var lnbTitle = lnbList.children('a');
+var lnbSmall = lnbList.children('.small');
+var lnbLinkList = lnbSmall.children('dd');
+
+
+lnb.css({height:'200px'});
+lnbSmall.hide();
+lnbTitle.on('mouseenter', function(e){
+  e.preventDefault();
+  lnbSmall.stop().slideDown();
 });
-
-  // var lnbBtn = $('.lnb01');
-  // var gnbUl = lnbBtn.children('ul');
-
-  // lnbBtn.on('click', function(evt){
-  //   evt.preventDefault();
-  //   // gnbUl.toggle();
-  //   gnbUl.slideToggle();
-  //   // gnbUl.fadeToggle();
-  // });
-
+lnbList.on('mouseleave',function(){
+lnbSmall.slideUp();
+});
+lnbSmall.last().find('dd').last().on('blur',function(){
+  lnbSmall.slideUp();
+});
 
 });
 
